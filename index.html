@@ -1,60 +1,119 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio - Gabriel Valeze</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #121212;
-            color: white;
-            text-align: center;
-        }
-        header {
-            background-color: #1e1e1e;
-            padding: 20px;
-            font-size: 24px;
-            font-weight: bold;
-        }
-        .tech-icons {
-            margin: 20px 0;
-        }
-        .tech-icons img {
-            width: 50px;
-            margin: 10px;
-        }
-        .links {
-            margin: 20px 0;
-        }
-        .links a {
-            color: #00aced;
-            text-decoration: none;
-            font-size: 18px;
-            margin: 10px;
-            display: inline-block;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfólio - Gabriel Valeze</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #121212;
+      color: white;
+      text-align: center;
+    }
+
+    header {
+      background-color: #1e1e1e;
+      padding: 30px 20px;
+      font-size: 26px;
+      font-weight: bold;
+    }
+
+    section {
+      padding: 30px 20px;
+    }
+
+    h2 {
+      margin-bottom: 30px;
+      font-size: 22px;
+    }
+
+    .tech-grid {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .tech-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 80px;
+    }
+
+    .tech-item img {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 8px;
+    }
+
+    .tech-item span {
+      font-size: 14px;
+      color: #ccc;
+    }
+
+    .links a {
+      color: #00aced;
+      text-decoration: none;
+      font-size: 18px;
+      margin: 0 15px;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      transition: color 0.3s;
+    }
+
+    .links a:hover {
+      color: #1da1f2;
+    }
+  </style>
 </head>
 <body>
-    <header>
-        Gabriel Valeze Elisbão do Nascimento
-    </header>
-    <section class="tech-icons">
-        <h2>Tecnologias que utilizo</h2>
+  <header>
+    Gabriel Valeze Elisbão do Nascimento
+  </header>
+
+  <section>
+    <h2>Tecnologias que utilizo</h2>
+    <div class="tech-grid">
+      <div class="tech-item">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
+        <span>JavaScript</span>
+      </div>
+      <div class="tech-item">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
+        <span>React</span>
+      </div>
+      <div class="tech-item">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
+        <span>Python</span>
+      </div>
+      <div class="tech-item">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
+        <span>Flutter</span>
+      </div>
+      <div class="tech-item">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
-    </section>
-    <section class="links">
-        <h2>Contato</h2>
-        <a href="https://linkedin.com/in/gabrielvalezelisbaodonascimento" target="_blank">LinkedIn</a>
-        <a href="mailto:seuemail@example.com">Email</a>
-        <a href="https://github.com/GabrielValeze" target="_blank">GitHub</a>
-    </section>
+        <span>MySQL</span>
+      </div>
+    </div>
+  </section>
+
+  <section class="links">
+    <h2>Contato</h2>
+    <a href="https://linkedin.com/in/gabrielvalezelisbaodonascimento" target="_blank">
+      <i class="fab fa-linkedin"></i> LinkedIn
+    </a>
+    <a href="mailto:seuemail@example.com">
+      <i class="fas fa-envelope"></i> Email
+    </a>
+    <a href="https://github.com/GabrielValeze" target="_blank">
+      <i class="fab fa-github"></i> GitHub
+    </a>
+  </section>
 </body>
 </html>
