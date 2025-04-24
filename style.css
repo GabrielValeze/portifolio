@@ -1,0 +1,125 @@
+/* Reset básico e tipografia */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #121212;
+  color: #ffffff;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* Header */
+header {
+  background-color: #1e1e1e;
+  padding: 40px 20px;
+}
+
+header > p {
+  font-size: 18px;
+  font-weight: 300;
+  margin-top: 10px;
+  color: #bbbbbb;
+}
+
+/* Seções */
+section {
+  padding: 40px 20px;
+}
+
+/* Textos de introdução e projetos */
+.intro,
+.project p {
+  max-width: 800px;
+  margin: 0 auto 20px;
+  color: #cccccc;
+  font-size: 16px;
+}
+
+/* Títulos de seção */
+h2 {
+  font-size: 24px;
+  margin-bottom: 25px;
+  color: #ffffff;
+}
+
+/* Grade de tecnologias */
+.tech-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80px;
+}
+
+.tech-item img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 8px;
+}
+
+.tech-item span {
+  font-size: 14px;
+  color: #bbbbbb;
+}
+
+/* Vídeo */
+video {
+  display: block;
+  margin: 30px auto;
+  max-width: 100%;
+  border-radius: 10px;
+}
+
+/* Seção “Atualmente Estudando” e “Idiomas” usam mesma classe .project */
+.project {
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+/* Links de contato */
+.links {
+  background-color: #1e1e1e;
+  padding: 30px 20px;
+}
+
+.links a {
+  color: #00aced;
+  text-decoration: none;
+  font-size: 18px;
+  margin: 0 15px;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  transition: color 0.3s ease;
+}
+
+.links a:hover {
+  color: #1da1f2;
+}
+
+/* Logo da universidade */
+.university-logo {
+  width: 140px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+}
+
+/* Botão de download */
+.links a[href$=".pdf"] {
+  display: inline-block;
+  margin-top: 20px;
+  font-size: 16px;
+}
+
