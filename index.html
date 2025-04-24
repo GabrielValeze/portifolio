@@ -3,103 +3,15 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Portfólio de Gabriel Valeze, desenvolvedor web e mobile formado em Ciência da Computação. Projetos, habilidades e contato."/>
   <title>Portfólio - Gabriel Valeze</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #121212;
-      color: white;
-      text-align: center;
-    }
-
-    header {
-      background-color: #1e1e1e;
-      padding: 30px 20px;
-      font-size: 26px;
-      font-weight: bold;
-    }
-
-    section {
-      padding: 30px 20px;
-    }
-
-    h2 {
-      margin-bottom: 30px;
-      font-size: 22px;
-    }
-
-    .intro {
-      max-width: 700px;
-      margin: 0 auto 30px;
-      font-size: 16px;
-      color: #ccc;
-    }
-
-    .tech-grid {
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-      gap: 30px;
-    }
-
-    .tech-item {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      width: 80px;
-    }
-
-    .tech-item img {
-      width: 50px;
-      height: 50px;
-      margin-bottom: 8px;
-    }
-
-    .tech-item span {
-      font-size: 14px;
-      color: #ccc;
-    }
-
-    .links a {
-      color: #00aced;
-      text-decoration: none;
-      font-size: 18px;
-      margin: 0 15px;
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      transition: color 0.3s;
-    }
-
-    .links a:hover {
-      color: #1da1f2;
-    }
-
-    .project {
-      max-width: 700px;
-      margin: 0 auto 20px;
-      color: #ccc;
-      font-size: 15px;
-      line-height: 1.6;
-    }
-
-    .project strong {
-      color: #fff;
-    }
-
-    .university-logo {
-      width: 120px;
-      margin-bottom: 15px;
-      border-radius: 10px;
-    }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     Gabriel Valeze Elisbão do Nascimento
+    <p>Desenvolvedor Web & Mobile | Ciência da Computação | Curioso por Natureza</p>
   </header>
 
   <!-- Seção da UENP -->
@@ -153,11 +65,28 @@
     </div>
   </section>
 
-<video autoplay muted loop playsinline width="700" style="max-width: 100%; border-radius: 10px;">
-  <source src="meuvideo.mp4" type="video/mp4">
-  Seu navegador não suporta vídeos em HTML5.
-</video>
-  
+  <video autoplay muted loop playsinline width="700" style="max-width: 100%; border-radius: 10px;">
+    <source src="meuvideo.mp4" type="video/mp4">
+    Seu navegador não suporta vídeos em HTML5.
+  </video>
+
+  <!-- Atualmente Estudando -->
+  <section>
+    <h2>Atualmente Estudando</h2>
+    <div class="project">
+      <p>Dart (Flutter), TypeScript, React Native, BLE (Bluetooth Low Energy), PostgreSQL.</p>
+      <p>Explorando Docker, CI/CD e serviços de nuvem (AWS/GCP).</p>
+    </div>
+  </section>
+
+  <!-- Idiomas -->
+  <section>
+    <h2>Idiomas</h2>
+    <div class="project">
+      <p>🇧🇷 Português (Nativo) · 🇬🇧 Inglês (B2 – Intermediário Superior) · 🇪🇸 Espanhol (Básico)</p>
+    </div>
+  </section>
+
   <!-- Projetos -->
   <section>
     <h2>Projetos e Interesses</h2>
@@ -179,6 +108,9 @@
     </a>
     <a href="https://github.com/GabrielValeze" target="_blank">
       <i class="fab fa-github"></i> GitHub
+    </a>
+    <a href="ResumeGabrielValeze.pdf" download>
+      <i class="fas fa-file-pdf"></i> Currículo (PDF)
     </a>
   </section>
 </body>
