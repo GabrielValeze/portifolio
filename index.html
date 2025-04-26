@@ -5,60 +5,70 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <meta name="description" content="Portfólio de Gabriel Valeze, desenvolvedor web e mobile formado em Ciência da Computação. Projetos, habilidades e contato."/>
   <title>Portfólio - Gabriel Valeze</title>
+
+  <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <!-- Estilo principal -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
+
 <body>
-  <header>
+
+  <!-- Cabeçalho -->
+  <header data-aos="fade-down">
     Gabriel Valeze Elisbão do Nascimento
     <p>Desenvolvedor Web & Mobile | Ciência da Computação</p>
   </header>
 
   <!-- Seção da UENP -->
-  <section>
-    <img src="Logo-uenp.png" alt="Logo UENP" class="university-logo" />
+  <section data-aos="fade-up">
+    <img src="Logo-uenp.png" alt="Logo UENP" class="university-logo" data-aos="zoom-in" data-aos-delay="100" />
     <p class="intro">
       Formado em Ciência da Computação pela <strong>Universidade Estadual do Norte do Paraná (UENP)</strong> entre 2016 e 2023.
     </p>
   </section>
 
   <!-- Sobre mim -->
-  <section>
+  <section data-aos="fade-up" data-aos-delay="200">
     <p class="intro">
       Bacharel em Ciência da Computação pela UENP. Tenho experiência em desenvolvimento web, mobile e desktop, com foco em tecnologias como JavaScript, React, Python, Flutter e bancos de dados relacionais e não relacionais. Também possuo conhecimento em Docker, CI/CD e serviços em nuvem (AWS/GCP).
     </p>
 
     <h2>Tecnologias que utilizo</h2>
     <div class="tech-grid">
-      <div class="tech-item">
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="300">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript">
         <span>JavaScript</span>
       </div>
-      <div class="tech-item">
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="350">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript">
         <span>TypeScript</span>
       </div>
-      <div class="tech-item">
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="400">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt="React">
         <span>React</span>
       </div>
-      <div class="tech-item">
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="450">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" alt="Flutter">
         <span>Flutter</span>
       </div>
-      <div class="tech-item">
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="500">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python">
         <span>Python</span>
       </div>
-      <div class="tech-item">
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="550">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL">
         <span>MySQL</span>
       </div>
-      <div class="tech-item">
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="600">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL">
         <span>PostgreSQL</span>
       </div>
-      <div class="tech-item">
+      <div class="tech-item" data-aos="fade-up" data-aos-delay="650">
         <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker">
         <span>Docker</span>
       </div>
@@ -66,7 +76,7 @@
   </section>
 
   <!-- Atualmente Estudando -->
-  <section>
+  <section data-aos="fade-up" data-aos-delay="300">
     <h2>Atualmente Estudando</h2>
     <div class="project">
       <p>Dart (Flutter), TypeScript, React Native, BLE (Bluetooth Low Energy), PostgreSQL.</p>
@@ -75,7 +85,7 @@
   </section>
 
   <!-- Idiomas -->
-  <section>
+  <section data-aos="fade-up" data-aos-delay="400">
     <h2>Idiomas</h2>
     <div class="project">
       <p>BR Português (Nativo) · EN Inglês (B2 – Intermediário Superior) · ES Espanhol (Básico)</p>
@@ -83,7 +93,7 @@
   </section>
 
   <!-- Projetos -->
-  <section>
+  <section data-aos="fade-up" data-aos-delay="500">
     <h2>Projetos e Interesses</h2>
     <div class="project">
       <p><strong>Pesquisa acadêmica:</strong> Desenvolvimento de um jogo pré-xadrez para auxiliar no ensino de geometria analítica, orientado pelo Prof. Christian Bussmann.</p>
@@ -93,7 +103,7 @@
   </section>
 
   <!-- Contato -->
-  <section class="links">
+  <section class="links" data-aos="fade-up" data-aos-delay="600">
     <h2>Contato</h2>
     <a href="https://linkedin.com/in/gabrielvalezelisbaodonascimento" target="_blank">
       <i class="fab fa-linkedin"></i> LinkedIn
@@ -108,5 +118,15 @@
       <i class="fas fa-file-pdf"></i> Currículo (PDF)
     </a>
   </section>
+
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000, // duração das animações (1s)
+      once: true, // anima apenas uma vez ao rolar
+    });
+  </script>
+
 </body>
 </html>
